@@ -16,11 +16,6 @@
             }
         }
     </style>
-    <script>
-        function scrolltobottom() {
-            window.scrollTo(0,document.body.scrollHeight);
-        }
-     </script>
   
     <title>Ristorante Con Fusion: About Us</title>
 
@@ -50,9 +45,41 @@
               <a class="nav-link" style="color: white;" href="#"><i class="fa fa-id-card px-1" style="font-size:20px;"></i>Contact</a>
             </li>
           </ul>
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal" style="color: white;" href="#"><i class="fa fa-arrow-right float-end px-1" style="font-size:20px;"></i>Login</a>
         </div>
       </div>
     </nav>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <label for="inputPassword2" class="visually-hidden">Enter Email</label>
+                        <input type="email" class="form-control" id="inputPassword2" placeholder="Password">
+                      </div>
+                    <div class="col-auto">
+                      <label for="inputPassword2" class="visually-hidden">Password</label>
+                      <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <div class="col-auto">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Sign in</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container-fluid py-5 px-5" style="background-color: rgb(167, 0, 245); color: white;">
